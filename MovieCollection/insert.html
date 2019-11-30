@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Insert Into Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            form {border: 3px solid #f1f1f1;
+                  padding: 15px;
+                  width: 50%;
+                  margin-left: 25%;
+
+            }
+            h1{
+                text-align: center;
+            }
+       
+            .container {
+                padding: 20px;
+            }
+            #link{
+
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1> Insert Data </h1>
+            <form action="insert.php" method="POST">
+                <label><b>Movie ID</b></label>
+                <input type="text" placeholder="Enter ID" name="mid">
+
+                <label><b>Movie Title</b></label>
+                <input type="text" placeholder="Enter Movie Title" name="mtitle" required>
+
+                <label><b>Release Date</b></label>
+                <input type="text" placeholder="formate : YYYY-MM-DD" name="date" required><br>
+
+                <label><b>IMDb Rating</b></label>
+                <input type="text" placeholder="Enter Rating" name="imdb" required><br>
+                <label><b>Watched ?</b></label>
+                <input type="radio" name="choice" value="yes"> Yes
+                <input type="radio" name="choice" value="no"> No<br><br>
+
+                <label><b>Movie Description</b></label>
+                <input type="text" placeholder="Enter Description" name="mdes" >
+
+                <button type="submit">Insert</button>
+            </form>
+        </div>
+    </body>
+</html>
